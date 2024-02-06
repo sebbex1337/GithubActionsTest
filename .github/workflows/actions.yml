@@ -5,7 +5,15 @@ jobs:
     run-github-actions:
       runs-on: ubuntu-latest
       steps:
-        - name: Simple JS action
-          uses: actions/hello-world-javascript-action@master
-          with:
-            who-to-greet: Sebastian
+        - name: List files
+          run: |
+            pwd
+            ls -a
+        - name: Simple JS Action
+          id: greet
+        - name: Checkout
+          uses: actions/checkout@√1
+        - name: List files after
+          run: |
+            pwd
+            ls -a
