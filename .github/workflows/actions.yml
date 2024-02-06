@@ -9,8 +9,6 @@ jobs:
           run: |
             pwd
             ls -a
-        - name: Simple JS Action
-          id: greet
         - name: Checkout
           uses: actions/checkout@√1
         - name: List files after
